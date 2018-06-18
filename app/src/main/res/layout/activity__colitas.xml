@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal"
+    tools:context="app.tecsup.com.mycategories.Activity_Colitas"
+android:orientation="vertical"
+android:background="@color/colorPrimaryDark"
+android:padding="16dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Productos de MyShop"
+    android:textSize="66px"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:textColor="@color/colorTextHint"
+    />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+<ImageView
+    android:id="@+id/imageview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/helados" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="previousImage"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
+        android:text="Previous Image" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorTextHint"
+        android:onClick="nextImage"
+        android:text="Next Image" />
+
+
+</LinearLayout>
+
+
+<android.support.v7.widget.AppCompatImageView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="40dp"
+    android:src="@drawable/desc"/>
+
+</LinearLayout>
